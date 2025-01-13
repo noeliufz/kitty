@@ -6,10 +6,10 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-# font_family      monospace
-# bold_font        auto
-# italic_font      auto
-# bold_italic_font auto
+font_family      MesloLGM Nerd Font Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. The easiest way to select fonts is to run the `kitten
@@ -20,7 +20,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-# font_size 11.0
+font_size 15.0
 
 #: Font size (in pts).
 
@@ -876,7 +876,7 @@ cursor_trail 3
 #: start_resizing_window. The cells value is used for horizontal
 #: resizing, and the lines value is used for vertical resizing.
 
-# window_border_width 0.5pt
+window_border_width 0.5pt
 
 #: The width of window borders. Can be either in pixels (px) or pts
 #: (pt). Values in pts will be rounded to the nearest number of pixels
@@ -884,7 +884,7 @@ cursor_trail 3
 #: to be pts. Note that borders are displayed only when more than one
 #: window is visible. They are meant to separate multiple windows.
 
-# draw_minimal_borders yes
+draw_minimal_borders yes
 
 #: Draw only the minimum borders needed. This means that only the
 #: borders that separate the window from a neighbor are drawn. Note
@@ -951,7 +951,7 @@ cursor_trail 3
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-# hide_window_decorations no
+hide_window_decorations titlebar-only
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only and titlebar-and-corners can be used
@@ -1217,7 +1217,7 @@ cursor_trail 3
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+background_opacity 1
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1242,7 +1242,7 @@ cursor_trail 3
 #: will only work if dynamic_background_opacity was enabled in the
 #: original config.
 
-# background_blur 0
+background_blur 0
 
 #: Set to a positive value to enable background blur (blurring of the
 #: visuals behind a transparent window) on platforms that support it.
@@ -1852,7 +1852,7 @@ cursor_trail 3
 #: this option is obsolete (although still supported). Consider using
 #: text_composition_strategy instead.
 
-# macos_traditional_fullscreen no
+macos_traditional_fullscreen yes
 
 #: Use the macOS traditional full-screen transition, that is faster,
 #: but less pretty.
@@ -2267,12 +2267,12 @@ cursor_trail 3
 #: New tab
 
 # map kitty_mod+t new_tab
-# map cmd+t       new_tab
+map ctrl+t       new_tab
 
 #: Close tab
 
 # map kitty_mod+q close_tab
-# map cmd+w       close_tab
+map ctrl+w       close_tab
 
 #: Close OS window
 
@@ -2448,7 +2448,7 @@ cursor_trail 3
 #: Toggle fullscreen
 
 # map kitty_mod+f11 toggle_fullscreen
-# map ctrl+cmd+f    toggle_fullscreen
+map ctrl+enter    toggle_fullscreen
 
 #: Toggle maximized
 
@@ -2638,3 +2638,9 @@ cursor_trail 3
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME

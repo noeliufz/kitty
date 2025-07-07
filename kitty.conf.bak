@@ -6,7 +6,8 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family      MesloLGM Nerd Font Mono
+# font_family      MesloLGM Nerd Font Mono
+font_family      Maple Mono Normal NF CN
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -20,7 +21,7 @@ bold_italic_font auto
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 15.0
+font_size 14.0
 
 #: Font size (in pts).
 
@@ -2641,6 +2642,6 @@ map ctrl+enter    toggle_fullscreen
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Macchiato
+# Tokyo Night
 include current-theme.conf
 # END_KITTY_THEME
